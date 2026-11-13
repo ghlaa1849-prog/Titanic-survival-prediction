@@ -10,7 +10,7 @@ st.set_page_config(page_title="Titanic Survival Predictor", page_icon="🚢")
 # cache_resource makes Streamlit load them only once, not on every click
 @st.cache_resource
 def load_artifacts():
-    model = joblib.load("best_model.pkl")
+    model = joblib.load("best_model (1).pkl")
     scaler = joblib.load("scaler.pkl")
     columns = joblib.load("feature_columns.pkl")
     return model, scaler, columns
